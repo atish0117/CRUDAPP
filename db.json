@@ -1,49 +1,28 @@
 {
   "Employee": [
     {
-      "id": "emp_004",
-      "name": "Priya Nair",
-      "email": "priya.nair@example.com",
-      "phone": "+91-9812345678",
-      "city": "Chennai",
-      "job_status": "Looking for remote",
-      "resume_url": "https://example.com/resume/priya.pdf",
-      "skills": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Vue.js"
-      ],
-      "experience_type": "1 Year",
-      "portfolio": "https://priyanair.web"
-    },
-    {
-      "id": "emp_005",
-      "name": "Karan Singh",
-      "email": "karan.singh@example.com",
-      "phone": "+91-9001122334",
-      "city": "Hyderabad",
-      "job_status": "Actively looking",
-      "resume_url": "https://example.com/resume/karan.pdf",
-      "skills": [
-        "C#",
-        ".NET",
-        "SQL Server"
-      ],
-      "experience_type": "5 Years",
-      "portfolio": "https://karansingh.dev"
-    },
-    {
-      "id": "c44a",
-      "name": "Atish",
-      "email": "atish0117@gmail.com",
-      "post": "softwere"
-    },
-    {
       "id": "9292",
-      "name": "Atish",
+      "name": "jnhdeuhced",
       "email": "atish0117@gmail.com",
       "post": "softwere"
+    },
+    {
+      "id": "de4f",
+      "name": "akash",
+      "email": "akash@gmail.com",
+      "post": "HR"
+    },
+    {
+      "id": "1e35",
+      "name": "akash",
+      "email": "fhbrfnfrf@gmail.com",
+      "post": "HR"
+    },
+    {
+      "id": "4a8f",
+      "name": "praveen",
+      "email": "praveen123@gmail.com",
+      "post": "Op"
     }
   ]
 }

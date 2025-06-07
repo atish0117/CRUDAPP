@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 export const Home = () => {
@@ -31,11 +32,22 @@ export const Home = () => {
 
   return (
     <div>
+
+<table>
+  <thead>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>post</th>
+    <th>Action</th>
+  </thead>
+  <tbody>
       {show.length === 0 ? (
         <p>No employees found.</p>
       ) : (
         show.map((item, index) => (
-          <div key={index} className="border p-4 my-2">
+          <>  
+                  {/* <div key={index} className="border p-4 my-2">
             <h3>Name: {item.name}</h3>
             <p>ID: {item.id}</p>
             <p>Email: {item.email}</p>
@@ -45,10 +57,33 @@ export const Home = () => {
             >
               Delete
             </button>
-            <button className="bg-blue-500 text-white px-3 py-1">Update</button>
-          </div>
+
+              <Link to={`/update/${item.id}`}> <button className="bg-blue-500 text-white px-3 py-1">Update</button> </Link>
+          </div> */}
+
+          <tr>
+            <td>{item.id}</td>
+            <td>{item.name}</td>
+            <td>{item.email}</td>
+            <td>{item.post}</td>
+            <td>
+              <button
+              className="bg-red-500 text-white px-3 py-1 mr-2"
+              onClick={() => handleDelete(item.id)}
+            >
+              Delete
+            </button>
+
+              <Link to={`/update/${item.id}`}> <button className="bg-blue-500 text-white px-3 py-1">Update</button> </Link>
+            </td>
+          </tr>
+          </>
+
         ))
       )}
+      </tbody>
+</table>
+
     </div>
   );
 };
